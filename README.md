@@ -70,10 +70,10 @@ V1 PCB 成品：
 * TB6612FNG【C3】：封装SSOP-24，逻辑输入5V，电机驱动输入15Vmax，输出电流1.2A(ave)/3.2A(peak)
 
 版本V1存在的问题：
-1. 元件布局不符合实际需求：例如电机的供电线都集中在一侧，与两侧的电机布线不配合，电机电线不好整理
-2. 电源模块没有保险机制，若电源模块被击穿，16V电压会直接作用在电路所有的元件上，损坏整块电路板。
-3. 根据STM32原理图【A1-P23】
-
+1. 元件布局不符合实际需求：例如电机的供电线都集中在一侧，与两侧的电机布线不配合，电机电线不好整理  
+2. 电源模块没有保险机制，若电源模块被击穿，16V电压会直接作用在电路所有的元件上，损坏整块电路板。  
+3. 根据STM32原理图【A1-P23】  
+4. 贪小便宜吃大亏，买便宜芯片结果不能用，反复确认板子 + 来回快递用了半个多月才解决问题。  
 
 ### 版本V2 —— Cadance绘制
 
@@ -90,6 +90,12 @@ V1 PCB 成品：
 * 
 
 V2 原理图绘制：
+![V2 PCB_页面_1](https://github.com/user-attachments/assets/b644a857-5b70-4dd2-858d-53f1c33646b2)
+![V2 PCB_页面_3](https://github.com/user-attachments/assets/235d66d5-fcc6-4e03-8305-610d2147ca20)
+![V2 PCB_页面_4](https://github.com/user-attachments/assets/95a1dac7-f889-41be-a299-354de79da981)
+![V2 PCB_页面_5](https://github.com/user-attachments/assets/988e0a6e-f454-4928-8ca3-48f9f3646f44)
+![V2 PCB_页面_6](https://github.com/user-attachments/assets/b1fc4fc1-f354-4d16-bb38-1ca511ffc203)
+
 
 V2 PCB板绘制：
 <img width="3840" height="2088" alt="V2 PCB Top" src="https://github.com/user-attachments/assets/49185e57-54b1-4ef2-aa29-4827c9dc98fc" />
@@ -99,6 +105,7 @@ V2 PCB板绘制：
 
 
 V2 BOM表：
+<img width="2096" height="1158" alt="image" src="https://github.com/user-attachments/assets/e9b94fbf-467c-4cde-b758-a0a274f38d20" />
 
 
 
@@ -112,6 +119,10 @@ V2 BOM表：
 ## 3D打印产品
 从solidworks中导出stl文件，导入blender中，配置颜色进行预览
 <img width="3840" height="2088" alt="舵机小车-成品渲染" src="https://github.com/user-attachments/assets/51c274cc-9090-4e10-b5de-cf8e81455ce9" />
+  
+3D打印设备：拓竹P1S 0.4mm喷头
+3D打印误差：PLA和PETG普遍有0.1~0.2mm的打印误差，设计时应加以注意
+螺丝孔误差：若希望拧入3mm螺丝，应在solidworks中设计孔洞直径为2.95mm，可以保证有较好的拧紧效果。
 
 
 ## 参考目录
