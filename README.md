@@ -59,6 +59,12 @@ elrs.c
   void ELRS_Process(uint8_t * DataA, uint8_t * CH);			                 //ELRS文件主程序，接收DataA值（接收机原始信号），解析返回CH1~CH10（0~100）
 </pre>
 
+详细代码，参考目录如下：
+<img width="3827" height="1618" alt="image" src="https://github.com/user-attachments/assets/e903373c-c7ef-4a57-a3f0-54db5703d7c1" />
+
+
+
+
 ### ELRS信号解析
 ELRS 接收机采用串口通信，本项目使用STM32F103C8T6芯片，具体配置为：
 
