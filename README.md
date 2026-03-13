@@ -319,43 +319,7 @@ void ELRS_Process(uint8_t *DataA, uint8_t *CH);   // 主处理函数：原始数
 | 【B3】 | MP1584EN-LF-Z规格书 | DCDC电源芯片数据手册 |
 | 【C3】 | TB6612FNG规格书 | 电机驱动芯片数据手册 |
 
----
 
-## 📝 补充资料
-
-### 麦轮运动学分析
-
-麦轮小车的运动控制基于四个麦克纳姆轮的转速组合：
-
-<div align="center">
-<img src="https://github.com/user-attachments/assets/e4d0dc25-e124-47a4-a848-cefe1ae2499c" width="600" alt="麦轮解析1"/>
-</div>
-
-<div align="center">
-<img src="https://github.com/user-attachments/assets/cdded9bf-9756-46fe-86dd-78ab072fe0e0" width="600" alt="麦轮解析2"/>
-</div>
-
-<div align="center">
-<img src="https://github.com/user-attachments/assets/8847cdd3-5ee3-4a16-acd6-485b63c4b5c7" width="600" alt="麦轮解析3"/>
-<p><em>麦轮运动学解析</em></p>
-</div>
-
-运动模式：
-- **平移**：四轮同向同速
-- **横移**：对角线轮同向，另一对角线反向
-- **旋转**：左侧与右侧反向
-
-### N20减速电机特性
-
-<div align="center">
-<img src="https://github.com/user-attachments/assets/0d30a9fd-ea05-41aa-a658-50e35fde4925" width="600" alt="N20电机参数"/>
-<p><em>N20减速电机6V供电参数图</em></p>
-</div>
-
-6V供电下，200RPM版本：
-- 空载电流：约60mA
-- 推荐工作电流：50-150mA
-- 堵转电流：约200mA
 
 ---
 
